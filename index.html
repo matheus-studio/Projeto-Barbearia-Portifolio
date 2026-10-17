@@ -1,0 +1,645 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Barbearia 001 · Projeto fictício</title>
+  <meta name="description" content="Barbearia 001 é um negócio fictício: projeto demonstrativo de portfólio com direção de arte cinematográfica.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#000000">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Schibsted+Grotesk:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23000'/%3E%3Crect y='14' width='64' height='36' fill='%2313242A'/%3E%3Ccircle cx='32' cy='32' r='8' fill='%23F0BE74'/%3E%3C/svg%3E">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header" data-header>
+    <div class="site-header__inner">
+      <a class="wordmark" href="#topo" aria-label="Barbearia 001, voltar ao início">
+        <span class="wordmark__name">Barbearia 001</span>
+        <span class="wordmark__tag">projeto fictício</span>
+      </a>
+
+      <nav class="nav" aria-label="Principal">
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu" data-menu-toggle>
+          <span class="nav__toggle-lines" aria-hidden="true"></span>
+          <span class="nav__toggle-label">Menu</span>
+        </button>
+        <ul class="nav__list" id="menu" data-menu>
+          <li><a class="nav__link" href="#conceito">Conceito</a></li>
+          <li><a class="nav__link" href="#roteiro">A sessão</a></li>
+          <li><a class="nav__link" href="#servicos">Serviços</a></li>
+          <li><a class="nav__link" href="#fotogramas">Fotogramas</a></li>
+          <li class="nav__cta-item"><button class="btn btn--small" type="button" data-book>Reservar horário</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- ABERTURA -->
+    <section class="hero" id="topo" aria-labelledby="hero-title">
+      <div class="hero__frame">
+        <svg class="scene" data-scene viewBox="0 0 1600 670" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+          <defs>
+            <radialGradient id="h-wall" cx="62%" cy="32%" r="72%">
+              <stop offset="0" stop-color="#29505A"/>
+              <stop offset=".42" stop-color="#16303A"/>
+              <stop offset="1" stop-color="#060D0F"/>
+            </radialGradient>
+            <linearGradient id="h-floor" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#11211F"/>
+              <stop offset="1" stop-color="#040807"/>
+            </linearGradient>
+            <linearGradient id="h-cone" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#FFD9A0" stop-opacity=".42"/>
+              <stop offset=".55" stop-color="#F0BE74" stop-opacity=".09"/>
+              <stop offset="1" stop-color="#F0BE74" stop-opacity="0"/>
+            </linearGradient>
+            <radialGradient id="h-glow">
+              <stop offset="0" stop-color="#FFF1D2" stop-opacity="1"/>
+              <stop offset=".18" stop-color="#FFD594" stop-opacity=".7"/>
+              <stop offset=".55" stop-color="#F0BE74" stop-opacity=".12"/>
+              <stop offset="1" stop-color="#F0BE74" stop-opacity="0"/>
+            </radialGradient>
+            <radialGradient id="h-pool">
+              <stop offset="0" stop-color="#F0BE74" stop-opacity=".42"/>
+              <stop offset=".6" stop-color="#F0BE74" stop-opacity=".08"/>
+              <stop offset="1" stop-color="#F0BE74" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="h-leather" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#C65A63"/>
+              <stop offset=".22" stop-color="#8A2C36"/>
+              <stop offset="1" stop-color="#2E0A10"/>
+            </linearGradient>
+            <linearGradient id="h-leather-side" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#240709"/>
+              <stop offset=".5" stop-color="#93323D"/>
+              <stop offset="1" stop-color="#240709"/>
+            </linearGradient>
+            <linearGradient id="h-chrome" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#1E2628"/>
+              <stop offset=".42" stop-color="#E8EEF0"/>
+              <stop offset=".56" stop-color="#8A989C"/>
+              <stop offset="1" stop-color="#1A2123"/>
+            </linearGradient>
+            <linearGradient id="h-mirror" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#1D3B44"/>
+              <stop offset=".5" stop-color="#2D5560"/>
+              <stop offset="1" stop-color="#132A30"/>
+            </linearGradient>
+            <linearGradient id="h-streak" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+              <stop offset=".5" stop-color="#fff" stop-opacity=".09"/>
+              <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+            </linearGradient>
+            <radialGradient id="h-vignette" cx="60%" cy="45%" r="75%">
+              <stop offset=".45" stop-color="#000" stop-opacity="0"/>
+              <stop offset="1" stop-color="#000" stop-opacity=".8"/>
+            </radialGradient>
+            <pattern id="h-panel" width="96" height="120" patternUnits="userSpaceOnUse">
+              <path d="M0 0V120" stroke="#3B626B" stroke-opacity=".28"/>
+            </pattern>
+            <clipPath id="h-mirror-clip"><rect x="700" y="110" width="560" height="300" rx="4"/></clipPath>
+            <filter id="h-soft" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="9"/></filter>
+          </defs>
+
+          <rect y="-300" width="1600" height="300" fill="#060D0F"/>
+          <rect width="1600" height="670" fill="url(#h-wall)"/>
+          <rect y="440" width="1600" height="120" fill="#0B1719" opacity=".75"/>
+          <rect y="440" width="1600" height="120" fill="url(#h-panel)"/>
+          <rect y="438" width="1600" height="3" fill="#3B626B" opacity=".35"/>
+          <rect y="560" width="1600" height="110" fill="url(#h-floor)"/>
+          <rect y="669" width="1600" height="600" fill="#040807"/>
+          <rect y="558" width="1600" height="2" fill="#F0BE74" opacity=".14"/>
+
+          <!-- espelho -->
+          <rect x="700" y="110" width="560" height="300" rx="4" fill="url(#h-mirror)"/>
+          <g clip-path="url(#h-mirror-clip)">
+            <polygon points="1080,110 1170,110 1010,410 920,410" fill="url(#h-streak)"/>
+            <polygon points="1190,110 1215,110 1055,410 1030,410" fill="url(#h-streak)"/>
+            <circle cx="980" cy="98" r="120" fill="url(#h-glow)" opacity=".35"/>
+          </g>
+          <rect x="700" y="110" width="560" height="300" rx="4" fill="none" stroke="#9BAAAE" stroke-opacity=".45" stroke-width="3"/>
+
+          <!-- prateleira -->
+          <rect x="1350" y="304" width="220" height="7" fill="#081113"/>
+          <g fill="#0A1416" stroke="#F0BE74" stroke-opacity=".28" stroke-width="1.5">
+            <rect x="1370" y="252" width="26" height="52" rx="4"/>
+            <rect x="1378" y="240" width="10" height="13"/>
+            <rect x="1410" y="264" width="34" height="40" rx="6"/>
+            <rect x="1458" y="232" width="22" height="72" rx="3"/>
+            <rect x="1464" y="220" width="10" height="13"/>
+            <rect x="1494" y="272" width="44" height="32" rx="10"/>
+          </g>
+
+          <!-- luminária -->
+          <rect x="978.5" y="0" width="3" height="64" fill="#030707"/>
+          <path d="M944 64 H1016 L1050 102 H910 Z" fill="#0B1213"/>
+          <path d="M944 64 H1016" stroke="#F0BE74" stroke-opacity=".35" stroke-width="2"/>
+          <polygon points="912,102 1048,102 1300,640 660,640" fill="url(#h-cone)"/>
+          <circle cx="980" cy="104" r="170" fill="url(#h-glow)"/>
+          <ellipse cx="980" cy="604" rx="340" ry="46" fill="url(#h-pool)"/>
+
+          <!-- cadeira -->
+          <ellipse cx="992" cy="600" rx="210" ry="20" fill="#000" opacity=".65" filter="url(#h-soft)"/>
+          <ellipse cx="980" cy="590" rx="116" ry="14" fill="url(#h-chrome)"/>
+          <rect x="962" y="476" width="36" height="114" fill="url(#h-chrome)"/>
+          <rect x="925" y="472" width="6" height="64" fill="url(#h-chrome)"/>
+          <rect x="1029" y="472" width="6" height="64" fill="url(#h-chrome)"/>
+          <path d="M902 534 H1058 L1078 552 H882 Z" fill="url(#h-chrome)"/>
+
+          <rect x="832" y="394" width="10" height="72" fill="url(#h-chrome)"/>
+          <rect x="1118" y="394" width="10" height="72" fill="url(#h-chrome)"/>
+
+          <path d="M850 425 Q850 410 866 410 H1094 Q1110 410 1110 425 V462 Q1110 478 1094 478 H866 Q850 478 850 462 Z" fill="url(#h-leather-side)"/>
+          <path d="M866 411 H1094" stroke="#FFD08E" stroke-opacity=".55" stroke-width="2"/>
+
+          <path d="M876 416 L889 250 Q893 222 923 220 H1037 Q1067 222 1071 250 L1084 416 Z" fill="url(#h-leather)"/>
+          <g stroke="#1E0508" stroke-opacity=".55" stroke-width="2" fill="none">
+            <path d="M936 232 L929 410"/><path d="M980 228 V412"/><path d="M1024 232 L1031 410"/>
+          </g>
+          <path d="M925 221 H1035" stroke="#FFD9A0" stroke-opacity=".8" stroke-width="2.5" stroke-linecap="round"/>
+
+          <rect x="974" y="204" width="12" height="18" fill="url(#h-chrome)"/>
+          <rect x="930" y="160" width="100" height="46" rx="20" fill="url(#h-leather)"/>
+          <path d="M946 161 H1014" stroke="#FFE3B5" stroke-opacity=".9" stroke-width="2.5" stroke-linecap="round"/>
+
+          <rect x="810" y="372" width="82" height="24" rx="11" fill="url(#h-leather)"/>
+          <rect x="1068" y="372" width="82" height="24" rx="11" fill="url(#h-leather)"/>
+          <path d="M822 373 H880 M1080 373 H1138" stroke="#FFD08E" stroke-opacity=".5" stroke-width="2" stroke-linecap="round"/>
+
+          <!-- partículas de poeira na luz -->
+          <g fill="#FFE3B5">
+            <circle cx="940" cy="190" r="1.6" opacity=".6"/><circle cx="1012" cy="150" r="1.2" opacity=".5"/>
+            <circle cx="1060" cy="260" r="1.4" opacity=".45"/><circle cx="902" cy="300" r="1.1" opacity=".4"/>
+            <circle cx="1104" cy="340" r="1.5" opacity=".35"/><circle cx="868" cy="230" r="1" opacity=".5"/>
+            <circle cx="996" cy="122" r="1.3" opacity=".6"/><circle cx="1140" cy="200" r="1" opacity=".3"/>
+          </g>
+
+          <rect width="1600" height="670" fill="url(#h-vignette)"/>
+        </svg>
+
+        <div class="hero__content">
+          <h1 class="hero__title" id="hero-title">
+            <span class="hero__title-line">Barbearia</span>
+            <span class="hero__title-line hero__title-line--indent">001</span>
+          </h1>
+          <p class="hero__lead">Uma barbearia imaginada como um curta&#8209;metragem: uma cadeira, uma luz quente e uma hora inteira só para você.</p>
+          <div class="hero__actions">
+            <button class="btn" type="button" data-book>Reservar horário</button>
+            <a class="btn btn--ghost" href="#servicos">Ver serviços</a>
+          </div>
+        </div>
+
+        <p class="subtitle hero__subtitle" aria-hidden="true">Pode sentar. A próxima hora é sua.</p>
+      </div>
+
+      <div class="letterbox letterbox--top" aria-hidden="true"></div>
+      <div class="letterbox letterbox--bottom" aria-hidden="true"></div>
+      <p class="hero__disclaimer">Projeto demonstrativo de portfólio. Esta barbearia não existe.</p>
+    </section>
+
+    <!-- CONCEITO -->
+    <section class="section section--concept" id="conceito" aria-labelledby="conceito-title">
+      <div class="container concept">
+        <div class="concept__text">
+          <h2 class="display display--l" id="conceito-title">Menos vitrine, mais atmosfera.</h2>
+          <p class="concept__lead">A Barbearia 001 é um negócio fictício, criado para imaginar uma barbearia pensada como cena de cinema: luz baixa, uma única cadeira e tempo sem pressa.</p>
+          <p>Nada de televisão ligada, fila na porta ou cliente esperando atrás de você. O corte acontece como um plano longo, sem interrupções, e termina quando estiver pronto, não quando o relógio mandar.</p>
+        </div>
+
+        <aside class="credits" aria-labelledby="credits-title">
+          <h3 class="credits__title" id="credits-title">Ficha técnica</h3>
+          <dl class="credits__list">
+            <div class="credits__row"><dt>Elenco</dt><dd>Você, e mais ninguém na cadeira</dd></div>
+            <div class="credits__row"><dt>Fotografia</dt><dd>Luz de tungstênio, 2700 K</dd></div>
+            <div class="credits__row"><dt>Trilha</dt><dd>Baixa, ou nenhuma</dd></div>
+            <div class="credits__row"><dt>Duração</dt><dd>De 20 a 75 minutos</dd></div>
+            <div class="credits__row"><dt>Locação</dt><dd>Rua Imaginária, 001 <span class="muted">(endereço fictício)</span></dd></div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ROTEIRO -->
+    <section class="section section--script" id="roteiro" aria-labelledby="roteiro-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="display display--l" id="roteiro-title">O roteiro de uma sessão</h2>
+          <p class="section-head__text">Corte e barba completos, minuto a minuto. Cada etapa tem o seu tempo, e nenhuma é cortada na edição.</p>
+        </div>
+
+        <ol class="timeline">
+          <li class="timeline__item">
+            <span class="timecode" aria-label="Minuto zero">00:00</span>
+            <h3 class="timeline__title">Chegada</h3>
+            <p>Café ou água, casaco no cabide, celular no silencioso, se quiser.</p>
+          </li>
+          <li class="timeline__item">
+            <span class="timecode" aria-label="Minuto cinco">00:05</span>
+            <h3 class="timeline__title">Conversa</h3>
+            <p>Você diz o que quer. O barbeiro diz o que vê. Vocês decidem juntos.</p>
+          </li>
+          <li class="timeline__item">
+            <span class="timecode" aria-label="Minuto quinze">00:15</span>
+            <h3 class="timeline__title">Corte</h3>
+            <p>Tesoura, máquina e navalha, na ordem que o seu cabelo pedir.</p>
+          </li>
+          <li class="timeline__item">
+            <span class="timecode" aria-label="Minuto cinquenta">00:50</span>
+            <h3 class="timeline__title">Toalha quente</h3>
+            <p>Barba feita, finalização e um último olhar no espelho.</p>
+          </li>
+          <li class="timeline__item timeline__item--end">
+            <span class="timecode" aria-label="Minuto setenta e cinco">01:15</span>
+            <h3 class="timeline__title">Créditos</h3>
+            <p>Você levanta. A cadeira espera a próxima cena.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="section section--services" id="servicos" aria-labelledby="servicos-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="display display--l" id="servicos-title">Programação</h2>
+          <p class="section-head__text">Valores e durações demonstrativos, inventados para compor o projeto.</p>
+        </div>
+
+        <ul class="program" role="list">
+          <li class="program__row">
+            <div class="program__main">
+              <h3 class="program__name">Corte clássico</h3>
+              <p class="program__desc">Tesoura e máquina, lavagem e finalização com pomada.</p>
+            </div>
+            <p class="program__meta"><span class="program__time">45 min</span><span class="program__price">R$ 80</span></p>
+            <button class="btn btn--outline program__btn" type="button" data-book="corte">Reservar<span class="visually-hidden"> corte clássico</span></button>
+          </li>
+          <li class="program__row">
+            <div class="program__main">
+              <h3 class="program__name">Barba com toalha quente</h3>
+              <p class="program__desc">Navalha, toalha quente em duas rodadas e óleo no final.</p>
+            </div>
+            <p class="program__meta"><span class="program__time">35 min</span><span class="program__price">R$ 60</span></p>
+            <button class="btn btn--outline program__btn" type="button" data-book="barba">Reservar<span class="visually-hidden"> barba com toalha quente</span></button>
+          </li>
+          <li class="program__row program__row--feature">
+            <div class="program__main">
+              <h3 class="program__name">Sessão completa</h3>
+              <p class="program__desc">Corte e barba em sequência, do café à toalha quente.</p>
+            </div>
+            <p class="program__meta"><span class="program__time">75 min</span><span class="program__price">R$ 130</span></p>
+            <button class="btn program__btn" type="button" data-book="completa">Reservar<span class="visually-hidden"> sessão completa</span></button>
+          </li>
+          <li class="program__row">
+            <div class="program__main">
+              <h3 class="program__name">Contorno</h3>
+              <p class="program__desc">Pezinho, laterais e linha da barba entre um corte e outro.</p>
+            </div>
+            <p class="program__meta"><span class="program__time">20 min</span><span class="program__price">R$ 35</span></p>
+            <button class="btn btn--outline program__btn" type="button" data-book="contorno">Reservar<span class="visually-hidden"> contorno</span></button>
+          </li>
+          <li class="program__row">
+            <div class="program__main">
+              <h3 class="program__name">Pigmentação discreta</h3>
+              <p class="program__desc">Suaviza os fios brancos sem apagar quem você é.</p>
+            </div>
+            <p class="program__meta"><span class="program__time">30 min</span><span class="program__price">R$ 70</span></p>
+            <button class="btn btn--outline program__btn" type="button" data-book="pigmentacao">Reservar<span class="visually-hidden"> pigmentação discreta</span></button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FOTOGRAMAS -->
+    <section class="section section--stills" id="fotogramas" aria-labelledby="fotogramas-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="display display--l" id="fotogramas-title">Fotogramas</h2>
+          <p class="section-head__text">Ilustrações criadas para este projeto. Nenhuma imagem de cliente ou de barbearia real.</p>
+        </div>
+
+        <div class="stills">
+          <!-- Tesoura -->
+          <figure class="still still--a" data-still>
+            <svg viewBox="0 0 800 450" preserveAspectRatio="xMidYMid slice" role="img" aria-labelledby="s1-cap">
+              <defs>
+                <radialGradient id="s1-bg" cx="28%" cy="30%" r="85%">
+                  <stop offset="0" stop-color="#2E4D55"/><stop offset=".5" stop-color="#132830"/><stop offset="1" stop-color="#050B0D"/>
+                </radialGradient>
+                <linearGradient id="s1-wood" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#2B1A13"/><stop offset="1" stop-color="#090504"/>
+                </linearGradient>
+                <linearGradient id="s1-steel" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#F4F7F8"/><stop offset=".45" stop-color="#9AA8AC"/><stop offset="1" stop-color="#2C3639"/>
+                </linearGradient>
+                <radialGradient id="s1-light" cx="20%" cy="0%" r="80%">
+                  <stop offset="0" stop-color="#F0BE74" stop-opacity=".45"/><stop offset="1" stop-color="#F0BE74" stop-opacity="0"/>
+                </radialGradient>
+                <filter id="s1-blur" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="8"/></filter>
+              </defs>
+              <rect width="800" height="450" fill="url(#s1-bg)"/>
+              <rect y="300" width="800" height="150" fill="url(#s1-wood)"/>
+              <rect y="299" width="800" height="2" fill="#F0BE74" opacity=".35"/>
+              <g transform="translate(40 44) rotate(-6 400 262)" opacity=".7" filter="url(#s1-blur)">
+                <path d="M400 255 L668 238 L405 270 Z M400 262 L660 290 L396 272 Z" fill="#000"/>
+                <circle cx="250" cy="215" r="34" fill="none" stroke="#000" stroke-width="13"/>
+                <circle cx="250" cy="318" r="34" fill="none" stroke="#000" stroke-width="13"/>
+              </g>
+              <g transform="rotate(-6 400 262)">
+                <path d="M400 258 Q340 238 280 226" fill="none" stroke="url(#s1-steel)" stroke-width="13" stroke-linecap="round"/>
+                <path d="M400 266 Q340 292 280 306" fill="none" stroke="url(#s1-steel)" stroke-width="13" stroke-linecap="round"/>
+                <circle cx="250" cy="215" r="34" fill="none" stroke="url(#s1-steel)" stroke-width="13"/>
+                <circle cx="250" cy="318" r="34" fill="none" stroke="url(#s1-steel)" stroke-width="13"/>
+                <path d="M398 254 L668 238 L404 271 Z" fill="url(#s1-steel)"/>
+                <path d="M398 262 L660 290 L394 274 Z" fill="url(#s1-steel)" opacity=".85"/>
+                <path d="M410 255 L664 239" stroke="#FFFFFF" stroke-opacity=".9" stroke-width="1.5"/>
+                <circle cx="400" cy="264" r="8" fill="#D9E0E2" stroke="#1B2224" stroke-width="2"/>
+              </g>
+              <rect width="800" height="450" fill="url(#s1-light)"/>
+            </svg>
+            <figcaption class="subtitle still__caption" id="s1-cap">A tesoura trabalha em silêncio.</figcaption>
+          </figure>
+
+          <!-- Navalha -->
+          <figure class="still still--b" data-still>
+            <svg viewBox="0 0 450 600" preserveAspectRatio="xMidYMid slice" role="img" aria-labelledby="s2-cap">
+              <defs>
+                <radialGradient id="s2-bg" cx="55%" cy="20%" r="85%">
+                  <stop offset="0" stop-color="#3A1A1E"/><stop offset=".5" stop-color="#1A0C0F"/><stop offset="1" stop-color="#050203"/>
+                </radialGradient>
+                <linearGradient id="s2-blade" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#F7F9FA"/><stop offset=".5" stop-color="#A3B0B4"/><stop offset="1" stop-color="#394447"/>
+                </linearGradient>
+                <linearGradient id="s2-horn" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0" stop-color="#1E0E0A"/><stop offset=".5" stop-color="#6A3C26"/><stop offset="1" stop-color="#170A07"/>
+                </linearGradient>
+                <radialGradient id="s2-spot" cx="50%" cy="45%" r="45%">
+                  <stop offset="0" stop-color="#F0BE74" stop-opacity=".22"/><stop offset="1" stop-color="#F0BE74" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+              <rect width="450" height="600" fill="url(#s2-bg)"/>
+              <ellipse cx="225" cy="300" rx="230" ry="260" fill="url(#s2-spot)"/>
+              <g transform="translate(225 320) scale(1.55) rotate(-38) translate(-242 -321)">
+                <rect x="70" y="306" width="200" height="30" rx="15" fill="url(#s2-horn)"/>
+                <path d="M84 307.5 H258" stroke="#F0BE74" stroke-opacity=".7" stroke-width="1.5"/>
+                <circle cx="88" cy="321" r="4" fill="#B9C3C6"/>
+                <path d="M262 312 L392 300 Q414 300 414 318 L410 338 Q406 352 386 350 L266 336 Z" fill="url(#s2-blade)"/>
+                <path d="M266 313 L392 301" stroke="#2A3234" stroke-width="5" stroke-linecap="round"/>
+                <path d="M270 335 L388 349" stroke="#FFFFFF" stroke-opacity=".95" stroke-width="1.5"/>
+                <circle cx="264" cy="321" r="6" fill="#DCE3E5" stroke="#1C2325" stroke-width="2"/>
+              </g>
+            </svg>
+            <figcaption class="subtitle still__caption" id="s2-cap">A navalha só abre quando a pele está pronta.</figcaption>
+          </figure>
+
+          <!-- Espelho -->
+          <figure class="still still--c" data-still>
+            <svg viewBox="0 0 450 600" preserveAspectRatio="xMidYMid slice" role="img" aria-labelledby="s3-cap">
+              <defs>
+                <linearGradient id="s3-bg" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#18343C"/><stop offset="1" stop-color="#060E10"/>
+                </linearGradient>
+                <radialGradient id="s3-glass" cx="62%" cy="32%" r="80%">
+                  <stop offset="0" stop-color="#46727C"/><stop offset=".5" stop-color="#1D3D45"/><stop offset="1" stop-color="#0B1B1F"/>
+                </radialGradient>
+                <radialGradient id="s3-bulb">
+                  <stop offset="0" stop-color="#FFF4DC"/><stop offset=".2" stop-color="#FFD594" stop-opacity=".75"/><stop offset="1" stop-color="#F0BE74" stop-opacity="0"/>
+                </radialGradient>
+                <linearGradient id="s3-ring" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#E9D2A6"/><stop offset=".5" stop-color="#6B5638"/><stop offset="1" stop-color="#2A2116"/>
+                </linearGradient>
+                <clipPath id="s3-clip"><circle cx="225" cy="280" r="140"/></clipPath>
+              </defs>
+              <rect width="450" height="600" fill="url(#s3-bg)"/>
+              <circle cx="225" cy="280" r="140" fill="url(#s3-glass)"/>
+              <g clip-path="url(#s3-clip)">
+                <rect x="268" y="140" width="2" height="64" fill="#081114"/>
+                <path d="M250 204 H288 L304 226 H234 Z" fill="#0A1416"/>
+                <circle cx="269" cy="228" r="80" fill="url(#s3-bulb)"/>
+                <polygon points="120,140 170,140 90,420 40,420" fill="#fff" opacity=".05"/>
+              </g>
+              <circle cx="225" cy="280" r="140" fill="none" stroke="url(#s3-ring)" stroke-width="8"/>
+              <rect x="80" y="470" width="290" height="8" fill="#0A1214"/>
+              <rect x="80" y="469" width="290" height="1.5" fill="#F0BE74" opacity=".3"/>
+              <g fill="#1A1210" stroke="#F0BE74" stroke-opacity=".3">
+                <rect x="140" y="452" width="120" height="10" rx="2"/>
+              </g>
+              <g stroke="#1A1210" stroke-width="3">
+                <path d="M146 462v8M154 462v8M162 462v8M170 462v8M178 462v8M186 462v8M194 462v8M202 462v8M210 462v8M218 462v8M226 462v8M234 462v8M242 462v8M250 462v8"/>
+              </g>
+            </svg>
+            <figcaption class="subtitle still__caption" id="s3-cap">O espelho mostra o resultado antes de você.</figcaption>
+          </figure>
+
+          <!-- Vapor -->
+          <figure class="still still--d" data-still>
+            <svg viewBox="0 0 500 600" preserveAspectRatio="xMidYMid slice" role="img" aria-labelledby="s4-cap">
+              <defs>
+                <radialGradient id="s4-bg" cx="50%" cy="60%" r="75%">
+                  <stop offset="0" stop-color="#3B2A22"/><stop offset=".55" stop-color="#17110E"/><stop offset="1" stop-color="#050302"/>
+                </radialGradient>
+                <radialGradient id="s4-towel" cx="38%" cy="30%" r="80%">
+                  <stop offset="0" stop-color="#FBF5E9"/><stop offset=".55" stop-color="#C9BEA8"/><stop offset="1" stop-color="#5E5446"/>
+                </radialGradient>
+                <linearGradient id="s4-tray" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0" stop-color="#1A2022"/><stop offset=".45" stop-color="#B9C4C7"/><stop offset="1" stop-color="#1A2022"/>
+                </linearGradient>
+                <filter id="s4-steam" x="-50%" y="-20%" width="200%" height="140%"><feGaussianBlur stdDeviation="7"/></filter>
+              </defs>
+              <rect width="500" height="600" fill="url(#s4-bg)"/>
+              <ellipse cx="250" cy="452" rx="180" ry="30" fill="url(#s4-tray)"/>
+              <ellipse cx="250" cy="446" rx="168" ry="22" fill="#0E1214"/>
+              <g>
+                <circle cx="250" cy="375" r="88" fill="url(#s4-towel)"/>
+                <g fill="none" stroke="#6F6455" stroke-width="3">
+                  <circle cx="254" cy="378" r="68" stroke-opacity=".35"/>
+                  <circle cx="257" cy="381" r="48" stroke-opacity=".45"/>
+                  <circle cx="260" cy="383" r="28" stroke-opacity=".55"/>
+                  <circle cx="262" cy="385" r="10" stroke-opacity=".65"/>
+                </g>
+              </g>
+              <g fill="none" stroke="#F3ECDD" stroke-linecap="round" filter="url(#s4-steam)">
+                <path d="M214 280 C190 240 240 210 216 160 C196 120 230 90 220 50" stroke-width="16" stroke-opacity=".28"/>
+                <path d="M262 286 C286 246 238 206 266 156 C288 116 252 86 270 40" stroke-width="20" stroke-opacity=".22"/>
+                <path d="M300 292 C320 260 290 230 312 196" stroke-width="12" stroke-opacity=".2"/>
+              </g>
+            </svg>
+            <figcaption class="subtitle still__caption" id="s4-cap">Duas rodadas de toalha quente. Sem pressa.</figcaption>
+          </figure>
+
+          <!-- Pincel -->
+          <figure class="still still--e" data-still>
+            <svg viewBox="0 0 800 450" preserveAspectRatio="xMidYMid slice" role="img" aria-labelledby="s5-cap">
+              <defs>
+                <radialGradient id="s5-bg" cx="72%" cy="35%" r="85%">
+                  <stop offset="0" stop-color="#25454D"/><stop offset=".5" stop-color="#10232A"/><stop offset="1" stop-color="#040A0C"/>
+                </radialGradient>
+                <linearGradient id="s5-bowl" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0" stop-color="#0F1B1E"/><stop offset=".7" stop-color="#4E6E75"/><stop offset="1" stop-color="#0F1B1E"/>
+                </linearGradient>
+                <radialGradient id="s5-foam" cx="65%" cy="30%" r="80%">
+                  <stop offset="0" stop-color="#FFFFFF"/><stop offset=".6" stop-color="#D9D3C6"/><stop offset="1" stop-color="#7F796E"/>
+                </radialGradient>
+                <linearGradient id="s5-wood" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#9B6A45"/><stop offset=".5" stop-color="#4C2D1A"/><stop offset="1" stop-color="#1C0F08"/>
+                </linearGradient>
+                <radialGradient id="s5-bristle" cx="70%" cy="30%" r="80%">
+                  <stop offset="0" stop-color="#E8DAC2"/><stop offset=".5" stop-color="#8C7556"/><stop offset="1" stop-color="#2E2318"/>
+                </radialGradient>
+              </defs>
+              <rect width="800" height="450" fill="url(#s5-bg)"/>
+              <rect y="330" width="800" height="120" fill="#060B0C"/>
+              <rect y="329" width="800" height="2" fill="#F0BE74" opacity=".3"/>
+              <ellipse cx="520" cy="336" rx="150" ry="14" fill="#000" opacity=".6"/>
+              <path d="M400 250 H640 Q632 330 560 336 H480 Q408 330 400 250 Z" fill="url(#s5-bowl)"/>
+              <ellipse cx="520" cy="250" rx="120" ry="18" fill="#0B1517"/>
+              <g fill="url(#s5-foam)">
+                <circle cx="470" cy="244" r="30"/><circle cx="515" cy="232" r="38"/><circle cx="565" cy="242" r="32"/>
+                <circle cx="540" cy="216" r="24"/><circle cx="492" cy="222" r="20"/>
+              </g>
+              <g transform="rotate(-12 250 300)">
+                <ellipse cx="250" cy="330" rx="110" ry="10" fill="#000" opacity=".5"/>
+                <rect x="150" y="276" width="140" height="44" rx="20" fill="url(#s5-wood)"/>
+                <path d="M164 278 H276" stroke="#F0BE74" stroke-opacity=".6" stroke-width="2" stroke-linecap="round"/>
+                <path d="M290 280 Q380 250 386 298 Q380 346 290 316 Z" fill="url(#s5-bristle)"/>
+              </g>
+            </svg>
+            <figcaption class="subtitle still__caption" id="s5-cap">Espuma batida na hora, no pincel.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- REGRAS DA CASA -->
+    <section class="section section--rules" aria-labelledby="regras-title">
+      <div class="container rules">
+        <h2 class="display display--m rules__title" id="regras-title">Regras da casa</h2>
+        <ul class="rules__list" role="list">
+          <li class="rules__item">
+            <h3 class="rules__name">Um cliente por vez.</h3>
+            <p>A cadeira é sua do começo ao fim. Ninguém esperando atrás de você.</p>
+          </li>
+          <li class="rules__item">
+            <h3 class="rules__name">Tempo com folga.</h3>
+            <p>Cada horário tem minutos de sobra, para não começar atrasado nem terminar correndo.</p>
+          </li>
+          <li class="rules__item">
+            <h3 class="rules__name">Conversa opcional.</h3>
+            <p>Tem dia de papo, tem dia de silêncio. Os dois são bem-vindos.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CHAMADA FINAL -->
+    <section class="finale" aria-labelledby="finale-title">
+      <div class="finale__glow" aria-hidden="true"></div>
+      <div class="container finale__inner">
+        <h2 class="display display--xl" id="finale-title">Sua cena começa na cadeira.</h2>
+        <p class="finale__text">Escolha o serviço, o dia e o horário. É uma simulação: nada é enviado e nenhum horário é reservado de verdade.</p>
+        <button class="btn btn--large" type="button" data-book>Reservar horário</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- CRÉDITOS FINAIS -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <p class="footer__name">Barbearia 001</p>
+        <p class="footer__note">Negócio fictício. Projeto demonstrativo de portfólio: nomes, preços, horários e endereço foram inventados.</p>
+      </div>
+
+      <nav class="footer__col" aria-label="Rodapé">
+        <h2 class="footer__heading">Navegação</h2>
+        <ul role="list">
+          <li><a href="#conceito">Conceito</a></li>
+          <li><a href="#roteiro">A sessão</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#fotogramas">Fotogramas</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__col">
+        <h2 class="footer__heading">Locação fictícia</h2>
+        <p>Rua Imaginária, 001<br>Bairro Cenário</p>
+        <p class="muted">Endereço inventado para o layout.</p>
+      </div>
+
+      <div class="footer__col">
+        <h2 class="footer__heading">Horário demonstrativo</h2>
+        <p>Terça a sábado<br>10h às 20h</p>
+        <p class="muted">Sem telefone ou redes sociais: este negócio não existe.</p>
+      </div>
+    </div>
+    <div class="container footer__end">
+      <p>Fim. Obrigado por assistir.</p>
+      <a class="footer__top" href="#topo">Voltar ao início</a>
+    </div>
+  </footer>
+
+  <!-- RESERVA (SIMULAÇÃO) -->
+  <dialog class="booking" id="booking" aria-labelledby="booking-title" data-booking>
+    <div class="booking__panel">
+      <div class="booking__head">
+        <div>
+          <p class="booking__badge">Simulação</p>
+          <h2 class="booking__title" id="booking-title">Reservar horário</h2>
+        </div>
+        <button class="icon-btn" type="button" data-close aria-label="Fechar">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+
+      <form class="booking__form" data-booking-form novalidate>
+        <fieldset class="field">
+          <legend class="field__label">Serviço</legend>
+          <div class="options options--services" data-services></div>
+        </fieldset>
+
+        <fieldset class="field">
+          <legend class="field__label">Dia</legend>
+          <div class="options options--chips" data-days></div>
+        </fieldset>
+
+        <fieldset class="field">
+          <legend class="field__label">Horário</legend>
+          <div class="options options--chips" data-times></div>
+        </fieldset>
+
+        <div class="field">
+          <label class="field__label" for="booking-name">Como podemos te chamar? <span class="muted">(opcional)</span></label>
+          <input class="input" id="booking-name" name="nome" type="text" autocomplete="off" maxlength="40" placeholder="Seu primeiro nome">
+          <p class="field__hint">Fica só nesta página. Nada é enviado ou guardado.</p>
+        </div>
+
+        <p class="booking__error" role="alert" data-error></p>
+
+        <div class="booking__foot">
+          <p class="booking__summary" data-summary aria-live="polite">Escolha um serviço para começar.</p>
+          <button class="btn" type="submit">Confirmar reserva</button>
+        </div>
+      </form>
+
+      <div class="booking__done" data-done hidden tabindex="-1">
+        <div class="booking__done-mark" aria-hidden="true"></div>
+        <h3 class="display display--m" data-done-title>Reserva simulada.</h3>
+        <p class="booking__done-text"><strong>Nenhum agendamento foi enviado.</strong> A Barbearia 001 é um negócio fictício e este site é um projeto demonstrativo de portfólio.</p>
+        <dl class="booking__recap" data-recap></dl>
+        <div class="booking__done-actions">
+          <button class="btn" type="button" data-close>Fechar</button>
+          <button class="btn btn--ghost" type="button" data-restart>Simular outra reserva</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
